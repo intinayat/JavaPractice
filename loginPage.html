@@ -1,0 +1,31 @@
+<html> <script>
+    function fun(){
+        var a= f1.t1.value;
+        var b= f1.t2.value;
+       
+        if(a==""){
+            alert("name is empty");
+            f1.t1.focus();
+        }
+       
+    
+        else if (b ==""){
+            alert("the password is empty");
+            f1.t2.focus();
+        }
+         else
+    {
+    alert("data submited successfully");
+    f1.submit();
+       }
+       }
+    </script>
+    <body bgcolor=cyan>
+    <form name="f1" action=second.jsp>
+    <h2 align=center><font color="red">JAVA SCRIPT</font></h2>
+    <hr color=blue>
+    <table>
+    <tr><td>USER NAME<td><input type="text" name=t1 size=20></tr>
+    <tr><td>PASSWORD<td><input type="password" name=t2 size=20></tr>
+    <tr><td><input type=button value=submit onClick='fun()'></tr>
+    </table></form></body></html>
